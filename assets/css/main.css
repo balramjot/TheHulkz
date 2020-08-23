@@ -1,0 +1,342 @@
+/********** importing fonts ***************/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
+
+
+
+/********** general css ***************/
+body {
+    padding-top: 100px;
+    background: #0e0a09;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    line-height: 26px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    color: #45aed6;
+    -webkit-transition: color 400ms, background-color 400ms;
+    -moz-transition: color 400ms, background-color 400ms;
+    -o-transition: color 400ms, background-color 400ms;
+    transition: color 400ms, background-color 400ms;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    color: #2a95be;
+}
+hr {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #FFF;
+}
+
+
+
+/********** navigation bar css ***************/
+.navbar-toggle {
+    border-radius: 0;
+}
+.navbar-default .navbar-collapse, .navbar-default .nvbar-form {
+    border-color: rgba(254, 254, 254, 0.3);
+}
+.navbar-nav > li > a{
+    text-transform: uppercase;
+}
+#main-nav.navbar-default { 
+    background: #ffffff4d; 
+}
+#main-nav.navbar-default .navbar-nav > li.active > a,
+#main-nav.navbar-default .navbar-nav > li.open > a,
+#main-nav.navbar-default .navbar-nav > li:hover > a {
+    background: #106110;    
+    color: #FFF;
+}
+.navbar.navbar-default {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #147814;
+}
+.navbar.navbar-default .navbar-toggle {
+    margin-top: 22px;
+    border-color: #147814;
+}
+.navbar.navbar-default .navbar-brand {
+    height: auto;
+    padding: 22px 15px 16px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li a:focus {
+    color: #FFF;
+    background: transparent;
+}
+.navbar-default .navbar-nav > li a {
+    color: #FFF;
+}
+#main-nav.navbar-default {
+    background: #147814;
+}
+
+
+
+/********** homepage image slider css ***************/
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    height: 650px;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+#bannerSlider li {
+    background-color: #FFF;
+}
+#bannerSlider li.active {
+    background-color: #147814;
+    border-color: #147814;
+}
+.pageHeadings {
+    padding-top: 100px;
+    color: #b5b5b5;
+    position: relative;
+}
+.section-header .section-title {
+    font-size: 44px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+    display: inline-block;
+    border-bottom: 2px solid #147814;
+}
+#banner{
+    border-bottom: 5px solid #147814;
+}
+
+
+
+/********** our services css ***************/
+.service-box {
+    padding: 20px 15px 10px;
+    overflow: hidden;
+    border-bottom: 2px solid #E0E0E0;
+    color: #b7b7b7;
+    border:1px solid #5A5A5A;
+    background: #0e0a09;   
+}
+.services .service-box .pull-left > i {
+    color: #147814;
+    background: #0e0a09;
+    font-size: 32px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 0px; 
+}
+.services .service-box {
+    margin: 0px 0 25px;
+}
+.extra-height {
+    margin-bottom: 20px;
+}
+.service-box:hover {
+    border-color:#147814;
+    cursor: pointer;
+    animation: jelly 0.5s;
+}
+@keyframes jelly {
+    0% {
+        transform: scale (1, 1);
+      }
+      25% {
+        transform: scale(0.9, 1.1);
+      }
+      50% {
+        transform: scale(1.2, 0.8);
+      }
+      75% {
+        transform: scale(0.95, 1.05);
+      }
+}
+
+
+
+/********** meet our trainers css ***************/
+.trainer-font{
+    text-align: center;
+    color: #FFF;
+}
+.trainer-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+.trainer-mar-botm {
+    margin-bottom:20px;
+}
+.trainer-image:hover {
+    animation: pop 0.5s linear;
+    cursor: pointer;
+}
+@keyframes pop {
+    50%  { transform: scale(1.2); }
+}
+
+
+
+/********** footer css ***************/
+#footer {
+    padding: 30px 0px;
+    color: rgba(255, 255, 255, 0.6);
+    background : #0e0a09;
+    font-size: 13px;
+}
+#footer a {
+    color: #FFF;
+}
+#footer a:hover {
+    color: #147814;
+}
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+#footer ul > li {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 3px 0;
+    width: 30px;
+    text-align: center;
+}
+
+
+
+/********** our satisfied customers css ***************/
+#customers {
+    background: #147814;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 50px;;
+}
+.customer-first {
+    margin-bottom: 30px;
+}
+.customer-first blockquote {
+    padding: 15px 20px;
+    margin-bottom: 35px;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 14px;
+    color: #292929;
+    background: #FFF;
+    line-height: 22px;
+}
+.customer-first blockquote:after {
+    left: 45px;
+    bottom: -19px;
+    position: absolute;
+    content: "";
+    border-top: 19px solid rgb(255, 255, 255);
+    border-right: 22px solid transparent;
+}
+
+
+
+/********** join today ***************/
+#opening-hours tbody tr:hover {
+    cursor: pointer;
+    background-color: #5A5A5A;
+}
+.join-tod {
+    padding: 20px;
+    font-size: 30px;
+    background-color: #147814;
+    border-color: #147814;
+}
+.join-tod:hover {
+    background-color: #106110;
+}
+
+
+
+/********** sign up page css ***************/
+.pck-1 {
+    background-color: #147814;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 10px;
+
+}
+.pck-2 {
+    background-color: #6e6e6e;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 10px;
+
+}
+.pck-1:hover {
+    cursor: pointer;
+    animation: swing ease-in-out 1s infinite alternate;
+  
+}
+.pck-2:hover {
+    cursor: pointer;
+    animation: swing ease-in-out 1s infinite alternate;
+  
+}
+@keyframes swing {
+    0% { transform: rotate(7deg); }
+    100% { transform: rotate(-7deg); }
+}
+.reg-form {
+    background-color: #106110;
+    padding: 50px;
+}
+
+
+
+/********** error and success message ***************/
+.errorMessage {
+    padding: 10px;
+    background-color: #F8D7DA;
+    color: #721C3B;
+    border-radius: 10px;
+    border: 1px solid #721C3B;
+    margin-bottom: 20px;
+}
+.successMessage {
+    padding: 10px;
+    background-color: #D4EDDA;
+    color: #156B77;
+    border-radius: 10px;
+    border: 1px solid #156B77;
+    margin-bottom: 20px;
+}
+
+
+
+
+/********** website responsivness ***************/
+@media only screen and (min-width: 768px) {
+    #main-nav.navbar-default .navbar-nav > li >a {
+        padding-top:35px;
+        padding-bottom: 35px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: rgba(255, 255, 255, 0.71);
+    }
+    #main-nav.navbar-default .navbar-nav > li.active > a,
+    #main-nav.navbar-default .navbar-nav > li.open > a,
+    #main-nav.navbar-default .navbar-nav > li:hover > a {
+        background: #106110;    
+        color: #FFF;
+    }
+    #footer .social-icons {
+        float: right;
+    }
+}
